@@ -1,33 +1,33 @@
-# Проект "АPI для Yatube"
+# Project "АPI for Yatube"
 
-## Стек технологий: 
+## Technology stack: 
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python&logoColor=green)
 ![Django](https://img.shields.io/badge/Django-3.2.16-red?style=for-the-badge&logo=django&logoColor=blue)
 ![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=blue)
 ![JWT](https://img.shields.io/badge/JWT_Djoser-black?style=for-the-badge&logo=JSON%20web%20tokens)
 
-### Описание:
-АPI социальной сети Yatube для авторов и подписчиков. Реализован функционал:
-Просмотр, создание, обновление, удаление публикаций и комментарий;
-Просмотр информации о сообществах;
-Подписка пользователей;
+### Description: 
+API for the Yatube social network for authors and followers. The following functionality is implemented:  
+- Viewing, creating, updating, and deleting posts and comments  
+- Viewing community information  
+- User subscriptions
 
-### Запуск приложения:
+### Starting the application:
 
-Клонируем проект:
+Clone the project:
 
 ```bash
 git clone https://github.com/Romaizega/yatube_api_final.git
 ```
 
-Переходим в папку с проектом:
+Navigate to the project folder:
 
 ```bash
 cd yatube_api_final
 ```
 
-Установить виртуальное окружение:
+Install a virtual environment:
 
 linux
 ```bash
@@ -37,7 +37,7 @@ windows
 ```bash
 python -m venv venv
 ```
-Активировать виртуальное окружение:
+Activate the virtual environment:
 
 linux
 ```bash
@@ -47,7 +47,7 @@ windows
 ```bash
 source venv/Script/activate
 ```
-Установить зависимости:
+Install dependencies:
 
 linux
 ```bash
@@ -61,7 +61,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Выполнить миграции:
+Apply migrations:
 
 linux
 ```bash
@@ -71,7 +71,7 @@ windows
 ```bash
 python manage.py migrate
 ```
-Запустить проект:
+Run the project:
 
 linux
 ```bash
@@ -81,15 +81,15 @@ windows
 ```bash
 python manage.py runserver
 ```
-После запуска проекта,  по адресу  http://127.0.0.1:8000/redoc/ будет доступна документация для API Yatube. Документация представлена в формате Redoc. 
+After starting the project, the API documentation for Yatube will be available at http://127.0.0.1:8000/redoc/. The documentation is provided in Redoc format.
 
-### Пример запросов к API:
+### Example API requests:
 
-Получение публикаций
+Getting posts:
 
 GET  http://127.0.0.1:8000/api/v1/posts/
 
-Responses: 200 Удачное выполнение запроса без пагинации 
+Responses: 200 Successful request execution without pagination
 ```bash
 {
   "count": 123,
@@ -108,5 +108,5 @@ Responses: 200 Удачное выполнение запроса без паг�
 }
 ```
 
-### Автор:
-[Р.Г. Изегов](https://github.com/Romaizega)
+### Author:
+[Roman Izegov](https://github.com/Romaizega)
